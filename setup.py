@@ -1,3 +1,11 @@
+#The main motto (or purpose) of setup.py is to act as the build and installation script for a Python project.
+# Package installation
+# Dependency management
+# It’s used to build and upload your package to PyPI so others can pip install it.
+# Name, version, author, license, description — all live here.
+
+
+
 from setuptools import find_packages,setup
 from typing import List
 
@@ -22,7 +30,7 @@ name='mlproject',
 version='0.0.1',
 author='krish',
 author_email='naitiksrivatava005@gmail.com',
-packages=find_packages(),
+packages=find_packages(),  # find_packages() → Automatically finds all Python packages in your project (folders with __init__.py).
 # install_requires=['pandas','numpy','seaborn'], this not usefull for 100 package or above 100
 install_requires=get_requirements('requirements.txt')
 
